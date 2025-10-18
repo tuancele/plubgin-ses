@@ -7,4 +7,4 @@ A WordPress plugin to send emails via Amazon SES.
 
 ## Requirements
 - PHP 7.4+
-- WordPress 6.0+
+- WordPress 6.0+# plubgin-ses
