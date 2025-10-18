@@ -1,29 +1,6 @@
 <?php
 
-/*
-  Plugin Name: WP SES
-  Version: 0.8.2
-  Plugin URI: https://wordpress.org/plugins/wp-ses/
-  Description: Uses Amazon SES for sending all site email
-  Author: Delicious Brains Inc
-  Author URI: https://deliciousbrains.com
- * Text Domain: wp-ses
- * Domain Path: /
- */
-
 define('WPSES_VERSION', 0.721);
-
-// TODO
-// stats cache (beware of directory)
-// logs of mails sent (inc details ?)
-// traiter les erreurs (stocker contenu) pour les re-tenter plus tard ?
-// Mailqueue
-// limits (check once per hour (or  faster) and stop if near limit)
-// blacklist, mail delivery handling
-// dashboard integration (main stats without extra page)
-// Add error display for test messages
-// add attachments (contact form 7) : see https://github.com/daniel-zahariev/php-aws-ses
-// retrieve the security credentials from the instance metadata service for EC2 : cf Christian at tellnes
 
 if (defined('WP_SES_ACCESS_KEY') and defined('WP_SES_SECRET_KEY')) {
     define('WP_SES_RESTRICTED', true);
